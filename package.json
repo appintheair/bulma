@@ -39,6 +39,7 @@
     "build-cleancss": "cleancss -o css/bulma.min.css css/bulma.css",
     "build-clean": "rimraf css",
     "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
+    "build-aita": "node-sass --omit-source-map-url ./aita.sass ./aita.css",
     "deploy": "npm run build",
     "start": "npm run build-sass -- --watch"
   },
